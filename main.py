@@ -53,4 +53,4 @@ model.compile(optimizer="adam", loss="sparse_categorical_crossentropy")
 print(model.summary())
 
 # train the model
-model.fit(imageds, epochs=5)
+model.fit(imageds, epochs=10)
