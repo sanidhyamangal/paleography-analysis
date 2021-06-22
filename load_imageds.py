@@ -1,5 +1,5 @@
 # import path for path functions
-from path import Path
+from pathlib import Path
 
 # import tensorflow
 import tensorflow as tf
@@ -29,7 +29,7 @@ class LoadData(object):
 
         # get the list of all the dirs
         all_root_labels = [
-            str(path.name) for path in self.path_to_dir.glob("*") if path.isdir()
+            str(path.name) for path in self.path_to_dir.glob("*") if path.is_dir()
         ]
 
         # design the dict of the labels
